@@ -1,1 +1,42 @@
-/* Main styles */
+:root {
+    --ink: #1a202c;
+    --paper: #f7fafc;
+    --accent: #3182ce;
+    --box-bg: #ffffff;
+}
+
+body {
+    background-color: var(--paper);
+    color: var(--ink);
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    padding: 1rem;
+}
+
+h1, h2 {
+    color: var(--accent);
+}
+
+.profile-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.box {
+    background-color: var(--box-bg);
+    padding: 1rem;
+    flex: 1 1 200px;
+    border: 1px solid var(--ink);
+}
+
+@media (min-width: 600px) {
+    body {
+        padding: 2rem;
+    }
+}
